@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  background-color: #f0f4f8; /* Arka plan rengi */
+  background-image: radial-gradient(circle, #fff 20%, transparent 20%),
+                    radial-gradient(circle, #fff 20%, transparent 20%);
+  background-size: 10px 10px; /* Desenin boyutu */
+  background-position: 0 0, 5px 5px; /* Desenin yerleşimi */
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+/* Header */
+.app-header {
+  background-color: #3777bc;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;  
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #e3e3e3;
+  color: #2e4f72;
+}
+
+.sidebar a.active {
+  font-weight: bold;
+  color: #007;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #3777bc;
+  padding-bottom: 10px;
+}
+
+/* Buttons */
+.button {
+  justify-content: space-between;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.edit-button {
+  background-color: #007bff;
+  border-color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.edit-button:hover {
+  background-color: darkblue;
+  
+}
+
+.add-button {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color:  #28a745;
+}
+
+.add-button:hover {
+  background-color: darkgreen;
+}
+
+
+.addStudent {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color:  #28a745;
+}

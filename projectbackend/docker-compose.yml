@@ -1,0 +1,20 @@
+
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: school_database
+    ports:
+      - "5432:5432"
+
+  app:
+    build:
+      context: .   # Dockerfile'ın bulunduğu dizin
+    ports:
+      - "8081:8080"
+    depends_on:
+      - db  # db servisine bağımlılık
