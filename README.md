@@ -1,1 +1,1 @@
-# -stajprojem
+# stajprojem
